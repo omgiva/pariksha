@@ -11,3 +11,5 @@ Route::get('/', function () {
 Route::get('/articles/bootstrap', [ArticleController::class, 'indexBootstrap']);
 
 Route::get('/articles/tailwindcss', [ArticleController::class, 'indexTailwind']);
+
+Route::get('/articles', [ArticleController::class, 'index']);
