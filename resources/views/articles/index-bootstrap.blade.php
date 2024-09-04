@@ -27,6 +27,12 @@
       @empty
       @endforelse
 
+      @if($articles->hasPages())
+      <div style="width:50%;">
+        {{$articles->links()}}
+      </div>
+      @endif
+
     </div>
   </div>
 </main>
